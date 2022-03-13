@@ -1,0 +1,15 @@
+D:\Dev\BACKEND\C#\FileTest\FileTest\bin\Debug\net6.0\FileTest.exe
+D:\Dev\BACKEND\C#\FileTest\FileTest\bin\Debug\net6.0\FileTest.deps.json
+D:\Dev\BACKEND\C#\FileTest\FileTest\bin\Debug\net6.0\FileTest.runtimeconfig.json
+D:\Dev\BACKEND\C#\FileTest\FileTest\bin\Debug\net6.0\FileTest.dll
+D:\Dev\BACKEND\C#\FileTest\FileTest\bin\Debug\net6.0\FileTest.pdb
+D:\Dev\BACKEND\C#\FileTest\FileTest\obj\Debug\net6.0\FileTest.csproj.AssemblyReference.cache
+D:\Dev\BACKEND\C#\FileTest\FileTest\obj\Debug\net6.0\FileTest.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dev\BACKEND\C#\FileTest\FileTest\obj\Debug\net6.0\FileTest.AssemblyInfoInputs.cache
+D:\Dev\BACKEND\C#\FileTest\FileTest\obj\Debug\net6.0\FileTest.AssemblyInfo.cs
+D:\Dev\BACKEND\C#\FileTest\FileTest\obj\Debug\net6.0\FileTest.csproj.CoreCompileInputs.cache
+D:\Dev\BACKEND\C#\FileTest\FileTest\obj\Debug\net6.0\FileTest.dll
+D:\Dev\BACKEND\C#\FileTest\FileTest\obj\Debug\net6.0\refint\FileTest.dll
+D:\Dev\BACKEND\C#\FileTest\FileTest\obj\Debug\net6.0\FileTest.pdb
+D:\Dev\BACKEND\C#\FileTest\FileTest\obj\Debug\net6.0\FileTest.genruntimeconfig.cache
+D:\Dev\BACKEND\C#\FileTest\FileTest\obj\Debug\net6.0\ref\FileTest.dll
