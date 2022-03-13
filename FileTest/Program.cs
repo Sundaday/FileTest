@@ -24,15 +24,16 @@ string pathAndFile2 = Path.Combine(path, fileName2);
 //Check if file exist 
 if (File.Exists(pathAndFile))
 {
-    Console.WriteLine("File all ready exist, overwritting in progress ... ");
+    Console.WriteLine("File allready exist, overwritting in progress ... ");
     //Show path
     Console.WriteLine("We are here => " + pathAndFile);
-    Console.WriteLine();
+    Console.WriteLine(fileName + " overwritting ... OK");
 }
 else
 {
     Console.WriteLine("File not exist, creation in progress ... ");
-    Console.WriteLine();
+    Console.WriteLine("We are here => " + pathAndFile);
+    Console.WriteLine(fileName + " created ... OK");
 }
 
 //Anonymous list
@@ -60,21 +61,20 @@ DateTime t1 = DateTime.Now;
 //Using stream to write something - using use stream to save memory
 using (var writeStream = File.CreateText(pathAndFile))
 {
-    Console.WriteLine("File preparation ... ");
+    Console.WriteLine("File preparation ... OK");
     for(int i = 1; i < nbLines; i++)
     {
         writeStream.Write("Line " + i + "\n");
     }
-    Console.WriteLine("OK ... ");
-    Console.WriteLine("Data writing ... ");
+    Console.WriteLine("Data writing ... OK");
 }
 
 //Second init
 DateTime t2 = DateTime.Now;
 
 //Compare 2nd & 1er in seconds
-var diff = (t2 - t1).TotalSeconds;
-Console.WriteLine("Progress ... " + diff + " secondes");
+var diff = (int)(t2 - t1).TotalSeconds;
+Console.WriteLine("Total progress in ... " + diff + " secondes");
 
 try
 {
@@ -98,6 +98,7 @@ if(!File.Exists(pathAndFile2))
 {
     //Make a copy of our first file on the second on in the same path
     File.Copy(pathAndFile, pathAndFile2);
+    Console.WriteLine(fileName2 + " created ... OK");
 }
 
 //Delete the seconde one
