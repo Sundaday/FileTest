@@ -1,19 +1,35 @@
 ﻿//Init path => MyDocuments
 //var path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-//Create folder "testTest"
-var path = "testTest";
-Directory.CreateDirectory(path);
 
+//init folder
+var path = "testTest";
+
+if (!Directory.Exists(path))
+{
+    //Create folder
+    Directory.CreateDirectory(path);
+}
 
 //Init name of our txt
 string fileName = "FileTest.txt";
+string fileName2 = "FileTest2.txt";
 
 //Combine path & file for a full compatibility over systems
 string pathAndFile = Path.Combine(path, fileName);
+string pathAndFile2 = Path.Combine(path, fileName2);
 
-//Show path
-Console.WriteLine("We are here => " + pathAndFile);
-Console.WriteLine();
+if (File.Exists(pathAndFile))
+{
+    Console.WriteLine("File all ready exist, overwritting in progress");
+    //Show path
+    Console.WriteLine("We are here => " + pathAndFile);
+    Console.WriteLine();
+}
+else
+{
+    Console.WriteLine("File not exist, creation in progress");
+    Console.WriteLine();
+}
 
 //Anonymous list
 var names = new List<string>()
@@ -39,6 +55,7 @@ try
 
     //Read file then return it in array 
     var result = File.ReadAllLines(pathAndFile);
+
     foreach(var line in result)
     {
         Console.WriteLine(line);
@@ -48,5 +65,7 @@ catch (FileNotFoundException ex)
 {
     Console.WriteLine(ex.ToString());
 }
+
+File.Copy(pathAndFile, pathAndFile2);
 
 //File.Delete(pathAndFile);
